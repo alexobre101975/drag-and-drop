@@ -1,0 +1,53 @@
+explicacion del proyecto Drag n'Drop 
+
+tablero se divida en diferentes columnas tenemos que hacer y espera los elementos 
+o tareas de cada columna deben poder moverse entre columnas y editarse.
+mostrar la API de arrastrar y soltar.
+si hago clic en este elemento, la columna se ilumina y si lo arrastro aquí, puede 
+ver que la columna se ilumina para mostrar que puede aceptarla y luego puedo 
+dejarla ir y la moverá a la siguiente columna También se actualiza en el 
+almacenamiento local.
+utiliza atributos editables de contenido para agregar y modificar elementos
+
+HTML:
+creamos div con la clase contenedor de arrastre (drag-container);creamos una lista desordenada UL y hijos LI
+Donde tendremos 4 columnas dentro del espacio,crear boton que guarde elemento .
+copiamos y pegamos 4 vecesy cambiamos los valores.
+so this one is our Backlog container,
+so this one is our progress container,
+so this one is our progress container, 
+so this one is our complete continer, 
+so this one is our On Hold container,
+agregamos un desplazamiento personalizado de la clase obtenido de esta direccion de correo 
+https://css-tricks.com/the-current-state-of-styling-scrollbars/
+custom-scroll :: - webkit-scrollbar
+esto es la configuracion de la Interfaz del usurario podemos desplazar tenemos 4 columnas.
+
+JavaScript:
+tenemos constantes para nuestros elementos nuestros botones de adiccion,guardar,agregar y real
+utilizando metodo querySelectorAll() que representa una lista de elementos del documento que coinciden con el grupo de selectores indicados.
+tenemos una lista de elementos que es un selector de consultas.
+también tenemos una matriz real esto va a almacenar los datos de cada una de nuestras listas.
+configurar el almacenamiento local y la funcionalidad del mismo.
+eliminamos todos los elementos de nuestras columnas debido a que el contenido del texto es igual a una cadena vacía. 
+backlogList.textContent = '';
+
+método appendChild() inserta un nuevo nodo dentro de la estructura DOM de un documento
+
+  columnEl.appendChild(listEl);
+ 
+Actualizar DOM con los elementos de nuestro almacenamiento local.
+El Modelo de Objetos del Documento (DOM) es un API para documentos HTML y XML. Proporciona una representación estructural del documento, 
+permitiendo la modificación de su contenido o su presentación visual. Esencialmente, comunica las páginas web con los scripts 
+o los lenguajes de programación.
+
+ API de arrastrar y soltar elementos utilizando listEl.draggable = true;  listEl.setAttribute('ondragstart', 'drag(event)');function allowDrop(e);
+utilizando el metodo setAttribute() agrega atributo a un elemento, y le da el valor especificado Si el  atributo ya existe sólo se 
+establece el valor o  cambió.
+mover correctamente nuestro artículo de una columna a otra.
+presionar botón Guardar y luego agregue  texto en la  columna utlizando el atributo ONCLICK.
+
+
+
+
+
